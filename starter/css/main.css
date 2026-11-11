@@ -57,3 +57,29 @@ h1 {
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 1rem; /* espai entre sub-items */
 }
+
+/* Personalització — colors diferents i pàgina a alçada completa */
+:root {
+  --color-item-1: #ff9f7f;
+  --color-item-2: #7fc8f8;
+  --color-item-3: #b39ddb;
+  --color-item-4: #81d8a0;
+  --color-item-5: #f7d56b;
+}
+
+.grid-container {
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+.item-1 { background-color: var(--color-item-1); }
+.item-2 { background-color: var(--color-item-2); }
+.item-3 { background-color: var(--color-item-3); }
+.item-4 { background-color: var(--color-item-4); }
+.item-5 { background-color: var(--color-item-5); }
+
+.sub-item:nth-child(1) { background-color: #ffd6d6; }
+.sub-item:nth-child(2) { background-color: #ffe5b4; }
+.sub-item:nth-child(3) { background-color: #fff9b0; }
+.sub-item:nth-child(4) { background-color: #c8f2c2; }
+.sub-item:nth-child(5) { background-color: #cfe8ff; }
