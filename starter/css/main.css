@@ -83,3 +83,8 @@ h1 {
 .sub-item:nth-child(3) { background-color: #fff9b0; }
 .sub-item:nth-child(4) { background-color: #c8f2c2; }
 .sub-item:nth-child(5) { background-color: #cfe8ff; }
+
+/* Item 4 ocupa tota la seva cel·la (anul·la l'alineació a baix de l'advanced) */
+.item-4 {
+  align-self: stretch;
+}
