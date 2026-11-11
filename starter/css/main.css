@@ -5,7 +5,7 @@ h1 {
   font-size: 1.5em;
   font-weight: bold;
 }
-/* Fase 2 — Grid principal */
+
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
@@ -41,7 +41,7 @@ h1 {
   background-color: lightsalmon;
   padding: 3rem;
 }
-/* Advanced — Item 4 alineat a la part inferior (Captura-Extra) */
+
 .item-4 {
   align-self: end;
 }
@@ -51,14 +51,12 @@ h1 {
   padding: 1rem;
 }
 
-/* Fase 1 — Subgrid: s'adapta amb minmax() en reduir l'amplada */
 .grid-container-2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 1rem; /* espai entre sub-items */
+  gap: 1rem;
 }
 
-/* Personalització — colors diferents i pàgina a alçada completa */
 :root {
   --color-item-1: #ff9f7f;
   --color-item-2: #7fc8f8;
@@ -84,7 +82,6 @@ h1 {
 .sub-item:nth-child(4) { background-color: #c8f2c2; }
 .sub-item:nth-child(5) { background-color: #cfe8ff; }
 
-/* Item 4 ocupa tota la seva cel·la (anul·la l'alineació a baix de l'advanced) */
 .item-4 {
   align-self: stretch;
 }
